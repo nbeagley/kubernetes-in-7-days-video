@@ -66,7 +66,7 @@ podTemplate(label: label,
               sh """
                 helm upgrade --install nick-first-app \
                   --namespace nick \
-                  --set image.repository=desdrury/first-app \
+                  --set image.repository=nick/first-app \
                   --set image.tag=${VERSION}.${COMMIT} \
                   --set ingress.enabled=true \
                   --set ingress.hosts[0]=first-app-cicd.nick.do.citopro.com \
